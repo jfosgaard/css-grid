@@ -1,4 +1,10 @@
 
+.hero{
+  background-image: url(../images/top.png) 
+}
+.video{
+  background-image: url(../images/video.png) 
+}
 .first{
  background-image: url(../images/top-left.png) 
 }

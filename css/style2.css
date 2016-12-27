@@ -1,4 +1,12 @@
+.hero{
+  background-image: url(../images/top.png) ;
+  height: 741px;
+}
+.video{
+  background-image: url(../images/video.png);
+  height: 475px;
 
+}
 .first{
  background-image: url(../images/top-left.png) 
 }
@@ -17,6 +25,7 @@
 .sixth{
  background-image: url(../images/bottom-right.png) 
 }
+
 
 .red {
   background-color: red;
@@ -96,6 +105,15 @@
     width: auto;
   }
 }
+.box-text {
+  position: relative;
+  display: block;
+  font-size: 30px;
+  max-width: 250px;
+  color: white;
+  padding-right: 25px;
+  box-sizing: border-box;
+}
 
 @media (min-width: 500px) {
   .one-one {
@@ -158,4 +176,51 @@
   .adj-top {
     top: 256px;
   }
+}
+
+.cta {
+  min-width: 200px;
+  height: 60px;
+  padding: 20px;
+  font-size: 20px;
+  color: #fff;
+  border: 2px solid #fff;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.top {
+  top: 25px;
+}
+
+.middle {
+  top: calc(50% - 30px);
+}
+
+.bottom {
+  bottom: 25px;
+}
+
+.left {
+  left: 25px;
+}
+
+.center {
+  left: calc(50% - 100px);
+}
+
+.right {
+  right: 25px;
 }

@@ -1,0 +1,127 @@
+@import "breakpoint";
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.grey {
+  background-color: grey;
+}
+
+$section-width:1024px;
+$box-height: $section-width / 4;
+$box-width: $section-width / 4;
+$tablet: 500px;
+$small-screen: 992px;
+.section {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  @include breakpoint($small-screen) {
+    max-width: $section-width;
+  }
+}
+
+.row {
+  width: 100%;
+  @include breakpoint($tablet) {
+    height: 25vw;
+  }
+  @include breakpoint($small-screen) {
+    height: $box-height;
+  }
+  &_one {
+    float: left;
+    overflow-y: visible;
+  }
+  &_two {
+    float: left;
+    overflow-y: visible;
+  }
+}
+
+.box {
+  position: relative;
+  height: 100vw;
+  width: 100%;
+  display: block;
+  float: left;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  @include breakpoint($tablet) {
+    height: $box-height;
+    width: auto;
+  }
+}
+
+.one-one {
+  @include breakpoint($tablet) {
+    width: 25%;
+    height: 25vw;
+  }
+  @include breakpoint($small-screen) {
+    height: $box-height;
+    width: 25%;
+  }
+}
+
+.one-two {
+  height: $box-height * 2;
+  @include breakpoint($tablet) {
+    width: 25%;
+    height: 50vw;
+  }
+  @include breakpoint($small-screen) {
+    height: $box-height * 2;
+  }
+}
+
+.two-one {
+  @include breakpoint($tablet) {
+    width: 50%;
+    height: 25vw;
+  }
+  @include breakpoint($small-screen) {
+    height: $box-height;
+  }
+}
+
+.two-two {
+  @include breakpoint($tablet) {
+    width: 50%;
+    height: 50vw;
+  }
+  @include breakpoint($small-screen) {
+    height: $box-height * 2;
+  }
+}
+
+.adj-top {
+  @include breakpoint($tablet) {
+    top: 25vw;
+  }
+  @include breakpoint($small-screen) {
+    top: $box-height;
+  }
+}
