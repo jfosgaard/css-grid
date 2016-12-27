@@ -1,0 +1,130 @@
+
+.first{
+ background-image: url(../images/top-left.png) 
+}
+.second{
+ background-image: url(../images/top-middle.png) 
+}
+.third{
+ background-image: url(../images/top-right.png) 
+}
+.fourth{
+ background-image: url(../images/bottom-left.png) 
+}
+.fifth{
+ background-image: url(../images/bottom-middle.png) 
+}
+.sixth{
+ background-image: url(../images/bottom-right.png) 
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.section {
+  margin: auto;
+  position: relative;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .section {
+    max-width: 1000px;
+  }
+}
+
+.row {
+  width: 100%;
+}
+.row_one {
+  height: auto;
+  float: left;
+  overflow-y: visible;
+}
+@media (min-width: 768px) {
+  .row_one {
+    height: calc(250px);
+  }
+}
+.row_two {
+  height: calc(250px);
+  float: left;
+  overflow-y: visible;
+}
+
+.box {
+  position: relative;
+  height: 100vw;
+  width: 100%;
+  display: block;
+  float: left;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .box {
+    height: calc(250px);
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .one-one {
+    width: 25%;
+  }
+}
+
+.one-two {
+  height: calc(calc(250px) * 2);
+}
+@media (min-width: 768px) {
+  .one-two {
+    width: 25%;
+  }
+}
+
+@media (min-width: 768px) {
+  .two-one {
+    width: 50%;
+    height: calc(250px);
+  }
+}
+
+@media (min-width: 768px) {
+  .two-two {
+    width: 50%;
+    height: calc(calc(250px) * 2);
+  }
+}
+
+@media (min-width: 768px) {
+  .adj-top {
+    top: 250px;
+  }
+}

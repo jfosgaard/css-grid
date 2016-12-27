@@ -1,0 +1,86 @@
+@import "breakpoint";
+.red{background-color:red;}
+.green{background-color:green;}
+.blue{background-color:blue;}
+.yellow{background-color:yellow;}
+.purple{background-color:purple;}
+.brown{background-color:brown;}
+.grey{background-color:grey;}
+$section-width:1000px;
+$box-height: calc(#{$section-width / 4});
+$box-width: calc(#{$section-width / 4});
+
+.section{
+ margin:auto;  
+ position:relative;
+ width:100%;
+   @include breakpoint(500px) {
+     max-width:$section-width;
+    
+  }
+}
+.row{
+  width:100%;
+  &_one{
+    height:auto;
+    float:left;
+    overflow-y: visible;
+      @include breakpoint(500px) { 
+      height:$box-height;
+    }
+  }
+  &_two{
+    height:$box-height;
+    float:left;
+    overflow-y: visible;
+  }
+}
+.box{
+  position:relative;
+  height:100vw;
+  width:100%;
+  display:block;
+  float:left;
+  padding:0;
+  margin:0;
+  @include breakpoint(500px) { 
+      height:$box-height;
+      width:auto;
+    }
+  }
+.one-one{
+   @include breakpoint(500px) { 
+        width:25%;
+    }
+}
+.one-two{
+    height: calc(#{$box-height} * 2);
+   @include breakpoint(500px) { 
+     width:25%;
+    
+    }
+}
+.two-one{
+  
+   @include breakpoint(500px) { 
+       width:50%;
+     height:$box-height;
+    }
+}
+.two-two{
+  
+   @include breakpoint(500px) { 
+      width:50%;
+     height: calc(#{$box-height} * 2);
+    }
+}
+.adj-top{
+  @include breakpoint(500px) { 
+      top:250px;
+    }
+}
+
+
+
+  
+  
